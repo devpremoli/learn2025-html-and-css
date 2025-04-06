@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You</title>
+</head>
+
+<body>
+    <h2>Thank You!</h2>
+    <p id="message">Processing...</p>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const email = params.get("email");
+        document.getElementById("message").textContent =
+            email ? `Thanks for subscribing, ${email}` : `No email provided.`;
+    </script>
+</body>
+
+</html>
+
+<!--
+thank-you.html is a static file — it’s just HTML content.
+A static file is a file that is served exactly as it is — no logic, no processing, no backend code 
+-->
