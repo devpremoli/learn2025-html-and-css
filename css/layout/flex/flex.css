@@ -1,0 +1,29 @@
+.flex-container {
+  display: flex;
+  background-color: DodgerBlue;
+  height: 200px;
+
+  /*
+  wraps flex items in reverse order (from bottom to top for rows, or from right to left for columns)
+  */
+  flex-wrap: wrap-reverse;
+
+  /*
+  flex-start -> positions flex-items at the beginning of the container
+  space-between -> 
+  space-around ->
+  space-evenly ->
+  */
+  justify-content: space-between;
+
+  align-items: center;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  font-size: 30px;
+  line-height: 75px;
+}

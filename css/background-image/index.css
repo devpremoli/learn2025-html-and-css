@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+}
+.hero-bg {
+  background-image: url("./images/hill.jpg");
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 50vh;
+  outline: solid 10px red;
+  background-size: 100%;
+}
+
+/*
+background-size
+
+default -> auto (image shown at original size - no scaling)
+
+
+one value -> width [height: auto];
+two value -> width height;
+
+
+cover
+- Scales the image to cover the entire container.
+- Maintains the image’s aspect ratio (no distortion).
+- Cropping - if container and image ratios don’t match.
+- No empty space — always fills the container edge to edge.
+
+contain
+- Scales the image to contain the image entirely within the container.
+- Maintains the image’s aspect ratio (no distortion).
+- No cropping — the whole image is always visible.
+- May leave empty space (letterboxing) - if container and image ratios don’t match.
+
+100% (or any other unit)
+- height auto-scales to maintain the image’s aspect ratio.
+
+100% 100% (or any other unit)
+- ignores the aspect ration - the image is stretched or squished to fill the container
+
+
+
+https://www.w3schools.com/cssref/css3_pr_background-size.php
+
+------------------------------------------------------------------------------------------------------
+background-size
+
+default -> 0% 0% (top-left corner of the container)
+
+one value -> horizontal [center];
+two values -> horizontal vertical;
+
+
+horizontal (or x) = left | center | right
+vertical (or y) = top | center | bottom
+
+
+100%
+- right center
+50%
+- center center
+100% 100%
+- right bottom
+50% 50%
+- center center
+
+10px 20px
+- 10px from left, 20px from top || x-offset = 10px, y-offset = 20px from left-top
+
+
+behavior
+- Works with background-size (like cover or contain) to control visible focal point.
+- Use with contain/cover to adjust image alignment within container.
+
+
+
+https://www.w3schools.com/cssref/pr_background-position.php
+*/
